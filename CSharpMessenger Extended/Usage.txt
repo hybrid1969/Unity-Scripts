@@ -1,0 +1,40 @@
+Usage 
+
+The main difference in usage from Hyde's implementation, is that with this messenger you can not have several events with same name, but different parameter signature. So for example, if you register a listener for "myEvent" with no parameters, and later try to register an event listener for "myEvent" that takes a float parameter, an exception will be thrown. Furthermore, there's an optional MessengerMode that allows for requiring at least one listener to exist when broadcasting an event. Generally, this Messenger will throw a lot of exceptions as soon as the programmer makes mistakes. Not all potential errors can be covered, but it tries to be strict in order to prevent silent, undetected bugs. 
+
+ Writing an event listener 
+
+
+    void OnSpeedChanged(float speed)
+    {
+        this.speed = speed;
+    }
+
+ Registering an event listener 
+
+
+    void OnEnable()
+    {
+        Messenger<float>.AddListener("speed changed", OnSpeedChanged);
+    }
+
+ Unregistering an event listener 
+
+
+    void OnDisable()
+    {
+        Messenger<float>.RemoveListener("speed changed", OnSpeedChanged);
+    }
+
+ Warning 
+
+RemoveListener should always be called on messages when loading a new level. Otherwise many MissingReferenceExceptions will be thrown, when invoking messages on destroyed objects. For example: 1. We registered a "speed changed" message in a Level1 scene. Afterwards the scene has been destroyed, but the "speed changed" message is still pointing to the OnSpeedChanged message handler in the destroyed class. 2. We loaded Level2 and registered another "speed changed" message, but the previous reference to the destroyed object hasn't been removed. We'll get a MissingReferenceException, because by invoking the "speed changed" message, the messaging system will first invoke the OnSpeedChanged handler of the destroyed object. 
+
+
+ Broadcasting an event 
+
+
+    if (speed != lastSpeed)
+    {
+        Messenger<float>.Broadcast("speed changed", speed);
+

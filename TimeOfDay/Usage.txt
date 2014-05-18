@@ -1,0 +1,12 @@
+Usage 
+
+Just put the script in Standard Assets, and use it that way : 
+
+void Start()
+{
+	TimeOfDay.dayDuration = 10f;
+}
+ 
+void Update()
+{
+	print( TimeOfDay.GetTimeOfDay() + " Days : " + TimeOfDay.Days() );

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Advanced CSharp Messenger - Unify Community Wiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.19.1" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Unify Community Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.unity3d.com/api.php?action=rsd" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Unify Community Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://wiki.unity3d.com/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://wiki.unity3d.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: mediawiki:resourceloader:filter:minify-css:7:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+
+<script src="http://wiki.unity3d.com/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Advanced_CSharp_Messenger","wgTitle":"Advanced CSharp Messenger","wgCurRevisionId":17881,"wgArticleId":3868,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Design Patterns","Messaging","C Sharp"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Advanced_CSharp_Messenger","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+
+/* cache key: mediawiki:resourceloader:filter:minify-js:7:9983699ab6150ffa89a90653b2338ac8 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-csharp {line-height: normal;}
+.source-csharp li, .source-csharp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for csharp
+ * CSS class: source-csharp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.csharp.source-csharp .de1, .csharp.source-csharp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.csharp.source-csharp  {font-family:monospace;}
+.csharp.source-csharp .imp {font-weight: bold; color: red;}
+.csharp.source-csharp li, .csharp.source-csharp .li1 {font-weight: normal; vertical-align:top;}
+.csharp.source-csharp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.csharp.source-csharp .li2 {font-weight: bold; vertical-align:top;}
+.csharp.source-csharp .kw1 {color: #0600FF; font-weight: bold;}
+.csharp.source-csharp .kw2 {color: #FF8000; font-weight: bold;}
+.csharp.source-csharp .kw3 {color: #008000;}
+.csharp.source-csharp .kw4 {color: #6666cc; font-weight: bold;}
+.csharp.source-csharp .kw5 {color: #000000;}
+.csharp.source-csharp .co1 {color: #008080; font-style: italic;}
+.csharp.source-csharp .co2 {color: #008080;}
+.csharp.source-csharp .co3 {color: #008080;}
+.csharp.source-csharp .coMULTI {color: #008080; font-style: italic;}
+.csharp.source-csharp .es0 {color: #008080; font-weight: bold;}
+.csharp.source-csharp .es_h {color: #008080; font-weight: bold;}
+.csharp.source-csharp .br0 {color: #008000;}
+.csharp.source-csharp .sy0 {color: #008000;}
+.csharp.source-csharp .st0 {color: #666666;}
+.csharp.source-csharp .st_h {color: #666666;}
+.csharp.source-csharp .nu0 {color: #FF0000;}
+.csharp.source-csharp .me1 {color: #0000FF;}
+.csharp.source-csharp .me2 {color: #0000FF;}
+.csharp.source-csharp .ln-xtra, .csharp.source-csharp li.ln-xtra, .csharp.source-csharp div.ln-xtra {background-color: #ffc;}
+.csharp.source-csharp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Advanced_CSharp_Messenger skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">
+				<span dir="auto">Advanced CSharp Messenger</span>
+			</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Unify Community Wiki</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Author: Ilya Suzdalnitski
+</p><p><br />
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Foreword"><span class="tocnumber">2</span> <span class="toctext">Foreword</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Cause_behind_the_MissingReferenceException_and_solution"><span class="tocnumber">2.1</span> <span class="toctext">Cause behind the MissingReferenceException and solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#The_Messenger"><span class="tocnumber">3</span> <span class="toctext">The Messenger</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Usage"><span class="tocnumber">3.1</span> <span class="toctext">Usage</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Event_listener"><span class="tocnumber">3.1.1</span> <span class="toctext">Event listener</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Registering_an_event_listener"><span class="tocnumber">3.1.2</span> <span class="toctext">Registering an event listener</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Unregistering_an_event_listener"><span class="tocnumber">3.1.3</span> <span class="toctext">Unregistering an event listener</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Broadcasting_an_event"><span class="tocnumber">3.1.4</span> <span class="toctext">Broadcasting an event</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#Cleaning_up_the_messenger"><span class="tocnumber">3.2</span> <span class="toctext">Cleaning up the messenger</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Permanent_messages"><span class="tocnumber">3.2.1</span> <span class="toctext">Permanent messages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="#Misc"><span class="tocnumber">3.3</span> <span class="toctext">Misc</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Log_all_messages"><span class="tocnumber">3.3.1</span> <span class="toctext">Log all messages</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Transition_from_other_messengers"><span class="tocnumber">3.3.2</span> <span class="toctext">Transition from other messengers</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-15"><a href="#Code"><span class="tocnumber">3.4</span> <span class="toctext">Code</span></a>
+<ul>
+<li class="toclevel-3 tocsection-16"><a href="#Callback.cs"><span class="tocnumber">3.4.1</span> <span class="toctext">Callback.cs</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#Messenger.cs"><span class="tocnumber">3.4.2</span> <span class="toctext">Messenger.cs</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Description"> Description </span></h2>
+<p>This is an advanced version of a messaging system for C#.
+It will automatically clean up its event table after a new level has been loaded. This will prevent the programmer from accidentally invoking destroyed methods and thus will help prevent many MissingReferenceExceptions.
+This messaging system is based on Rod Hyde's <a href="/index.php/CSharpMessenger" title="CSharpMessenger">CSharpMessenger</a> and Magnus Wolffelt's <a href="/index.php/CSharpMessenger_Extended" title="CSharpMessenger Extended">CSharpMessenger Extended</a>.
+</p>
+<h2> <span class="mw-headline" id="Foreword"> Foreword </span></h2>
+<p>Upon introduction of a messaging system into our project (<a href="/index.php/CSharpMessenger_Extended" title="CSharpMessenger Extended">CSharpMessenger Extended</a>) we started facing very strange bugs. Unity3d would throw MissingReferenceExceptions every time a message was broadcasted. It would say that the class, where the message handler was declared in, was destroyed. The problem came out of nowhere and there was not a reasonable explanation behind it. However placing the message handler code within try-catch blocks solved the problem. We understood that it was not a good solution to have hundreds of try-catch blocks in our code.
+It took us some time to finally figure out where was the problem.
+</p>
+<h3> <span class="mw-headline" id="Cause_behind_the_MissingReferenceException_and_solution"> Cause behind the MissingReferenceException and solution </span></h3>
+<p>It turned out, that the MissingReferenceException bug appeared, when a new level was loaded (or current one was reloaded). For example, we have a message <i><b>"start game"</b></i>, declared as follows:
+</p>
+<div dir="ltr" class="mw-geshi mw-content-ltr"><div class="csharp source-csharp"><pre class="de1"><span class="kw1">public</span> <span class="kw4">class</span> MainMenu <span class="sy0">:</span> MonoBehaviour <span class="br0">&#123;</span>	
+	<span class="kw4">void</span> Start <span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="br0">&#123;</span>
+		Messenger<span class="sy0">.</span><span class="me1">AddListener</span><span class="br0">&#40;</span><span class="st0">&quot;start game&quot;</span>, StartGame<span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="br0">&#125;</span>
+&#160;
+	<span class="kw4">void</span> StartGame<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="br0">&#123;</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;StartGame called in&quot;</span> <span class="sy0">+</span> gameObject<span class="br0">&#41;</span><span class="sy0">;</span>  <span class="co1">//This is the line that would throw an exception</span>
+	<span class="br0">&#125;</span>
+&#160;
+	<span class="kw4">void</span> StartGameButtonPressed<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="br0">&#123;</span>
+		Messenger<span class="sy0">.</span><span class="me1">Broadcast</span><span class="br0">&#40;</span><span class="st0">&quot;start game&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>At first glance, there's no problem at all, but after the level has been reloaded, Unity3d will throw an exception, saying that MainMenu has been destroyed. However there's no code that would EVER destroy the MainMenu script.
+</p><p>What actually happened is:
+</p>
+<ol><li> We added a "start game" message listener to our Messenger.
+</li><li> StartGameButtonPressed was called which in turn broadcasted the "start game" message.
+</li><li> We reloaded the level with Application.LoadLevel.
+</li><li> Step 1 repeated.
+</li><li> Step 2 repeated.
+</li></ol>
+<p>Here's how eventTable of the messenger looks like at corresponding steps:
+</p>
+<ul><li> At step 1: { <i><b>"start game", mainMenu1- &gt; StartGame();</b></i> }
+</li><li> At step 4: { <i><b>"start game", mainMenu1- &gt; StartGame();</b></i> } { <i><b>"start game", mainMenu2- &gt; StartGame();</b></i> }
+</li></ul>
+<p>So at step 4 we have two message handler for the same <i><b>"start game"</b></i> message - the first one is for the destroyed MainMenu object (got destroyed when reloaded a level), and the second one it for the current valid MainMenu object.
+It turns out that when we broadcast the <i><b>"start game"</b></i> message after reloading the level, the messenger invokes both - the destroyed and the valid message handlers. This is where the MissingReferenceException came from.
+</p><p>So the solution is obvious - clear the <i><b>eventTable</b></i> after unloading a level. There's nothing else the programmer has to do on his side to clean up the table, it's being done automatically.
+</p>
+<h1> <span class="mw-headline" id="The_Messenger"> The Messenger </span></h1>
+<p>We're happy to present you an advanced version of C# messaging system.
+</p>
+<h2> <span class="mw-headline" id="Usage"> Usage </span></h2>
+<h3> <span class="mw-headline" id="Event_listener"> Event listener </span></h3>
+<div dir="ltr" class="mw-geshi mw-content-ltr"><div class="csharp source-csharp"><pre class="de1"><span class="kw4">void</span> OnPropCollected<span class="br0">&#40;</span> PropType propType <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+	<span class="kw1">if</span> <span class="br0">&#40;</span>propType <span class="sy0">==</span> PropType<span class="sy0">.</span><span class="me1">Life</span><span class="br0">&#41;</span>
+		livesAmount<span class="sy0">++;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<h3> <span class="mw-headline" id="Registering_an_event_listener"> Registering an event listener </span></h3>
+<div dir="ltr" class="mw-geshi mw-content-ltr"><div class="csharp source-csharp"><pre class="de1"><span class="kw4">void</span> Start<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+	Messenger<span class="sy0">.</span><span class="me1">AddListener</span><span class="sy0">&lt;</span> Prop <span class="sy0">&gt;</span><span class="br0">&#40;</span> <span class="st0">&quot;prop collected&quot;</span>, OnPropCollected <span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<h3> <span class="mw-headline" id="Unregistering_an_event_listener"> Unregistering an event listener </span></h3>
+<div dir="ltr" class="mw-geshi mw-content-ltr"><div class="csharp source-csharp"><pre class="de1">	Messenger<span class="sy0">.</span><span class="me1">RemoveListener</span><span class="sy0">&lt;</span> Prop <span class="sy0">&gt;</span> <span class="br0">&#40;</span> <span class="st0">&quot;prop collected&quot;</span>, OnPropCollected <span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h3> <span class="mw-headline" id="Broadcasting_an_event"> Broadcasting an event </span></h3>
+<div dir="ltr" class="mw-geshi mw-content-ltr"><div class="csharp source-csharp"><pre class="de1"><span class="kw1">public</span> <span class="kw4">void</span> OnTriggerEnter<span class="br0">&#40;</span>Collider _collider<span class="br0">&#41;</span> 
+<span class="br0">&#123;</span>
+	Messenger<span class="sy0">.</span><span class="me1">Broadcast</span><span class="sy0">&lt;</span> PropType <span class="sy0">&gt;</span> <span class="br0">&#40;</span> <span class="st0">&quot;prop collected&quot;</span>, _collider<span class="sy0">.</span><span class="me1">gameObject</span><span class="sy0">.</span><span class="me1">GetComponent</span><span class="sy0">&lt;</span>Prop<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">.</span><span class="me1">propType</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<h2> <span class="mw-headline" id="Cleaning_up_the_messenger"> Cleaning up the messenger </span></h2>
+<p>The messenger cleans up its eventTable automatically when a new level loads. This will ensure that the eventTable of the messenger gets cleaned up and will save us from unexpected MissingReferenceExceptions.
+In case you want to clean up manager's eventTable manually, there's such an option by calling Messenger.Cleanup();
+</p>
+<h3> <span class="mw-headline" id="Permanent_messages"> Permanent messages </span></h3>
+<p>If you want a certain message to survive the Cleanup, mark it with Messenger.MarkAsPermanent(string). This may be required if a certain class responds to messages broadcasted from across different levels.
+</p><p><br />
+</p>
+<h2> <span class="mw-headline" id="Misc"> Misc </span></h2>
+<h3> <span class="mw-headline" id="Log_all_messages"> Log all messages </span></h3>
+<p>For debugging purposes, you can set the <i><b>shouldLogAllMessages</b></i> flag in Messenger to true. This will log all calls to the Messenger.
+</p>
+<h3> <span class="mw-headline" id="Transition_from_other_messengers"> Transition from other messengers </span></h3>
+<p>To quickly change all calls to messaging system from older CSharpMessenger's to the advanced, do the following steps:
+</p>
+<ol><li> In MonoDevelop go to Search =&gt; Replace in files
+</li><li> In Find field enter: <i><b>Messenger&lt;([^&lt;&gt;]+)&gt;.([A-Za-z0-9_]+)</b></i>
+</li><li> In Replace field enter: <i><b>Messenger.$2&lt;$1&gt;</b></i>
+</li><li> Select scope: Whole solution.
+</li><li> Check the Regex search check box. 
+</li><li> Press the Replace button
+</li></ol>
+<h2> <span class="mw-headline" id="Code"> Code </span></h2>
+<p>There're two files required for the messenger to work - <i><b>Callback.cs</b></i> and <i><b>Messenger.cs</b></i>.
+</p>
+<h3> <span class="mw-headline" id="Callback.cs"> Callback.cs </span></h3>
+<div dir="ltr" class="mw-geshi mw-content-ltr"><div class="csharp source-csharp"><pre class="de1"><span class="kw1">public</span> <span class="kw4">delegate</span> <span class="kw4">void</span> Callback<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw1">public</span> <span class="kw4">delegate</span> <span class="kw4">void</span> Callback<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span><span class="br0">&#40;</span>T arg1<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw1">public</span> <span class="kw4">delegate</span> <span class="kw4">void</span> Callback<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;</span><span class="br0">&#40;</span>T arg1, U arg2<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw1">public</span> <span class="kw4">delegate</span> <span class="kw4">void</span> Callback<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;</span><span class="br0">&#40;</span>T arg1, U arg2, V arg3<span class="br0">&#41;</span><span class="sy0">;</span></pre></div></div>
+<h3> <span class="mw-headline" id="Messenger.cs"> Messenger.cs </span></h3>
+<div dir="ltr" class="mw-geshi mw-content-ltr"><div class="csharp source-csharp"><pre class="de1"><span class="coMULTI">/*
+ * Advanced C# messenger by Ilya Suzdalnitski. V1.0
+ * 
+ * Based on Rod Hyde's &quot;CSharpMessenger&quot; and Magnus Wolffelt's &quot;CSharpMessenger Extended&quot;.
+ * 
+ * Features:
+ 	* Prevents a MissingReferenceException because of a reference to a destroyed message handler.
+ 	* Option to log all messages
+ 	* Extensive error detection, preventing silent bugs
+ * 
+ * Usage examples:
+ 	1. Messenger.AddListener&lt;GameObject&gt;(&quot;prop collected&quot;, PropCollected);
+ 	   Messenger.Broadcast&lt;GameObject&gt;(&quot;prop collected&quot;, prop);
+ 	2. Messenger.AddListener&lt;float&gt;(&quot;speed changed&quot;, SpeedChanged);
+ 	   Messenger.Broadcast&lt;float&gt;(&quot;speed changed&quot;, 0.5f);
+ * 
+ * Messenger cleans up its evenTable automatically upon loading of a new level.
+ * 
+ * Don't forget that the messages that should survive the cleanup, should be marked with Messenger.MarkAsPermanent(string)
+ * 
+ */</span>
+&#160;
+<span class="co1">//#define LOG_ALL_MESSAGES</span>
+<span class="co1">//#define LOG_ADD_LISTENER</span>
+<span class="co1">//#define LOG_BROADCAST_MESSAGE</span>
+<span class="co2">#define REQUIRE_LISTENER</span>
+&#160;
+<span class="kw1">using</span> <span class="co3">System</span><span class="sy0">;</span>
+<span class="kw1">using</span> <span class="co3">System.Collections.Generic</span><span class="sy0">;</span>
+<span class="kw1">using</span> <span class="co3">UnityEngine</span><span class="sy0">;</span>
+&#160;
+<span class="kw1">static</span> <span class="kw1">internal</span> <span class="kw4">class</span> Messenger <span class="br0">&#123;</span>
+	<span class="co2">#region Internal variables</span>
+&#160;
+	<span class="co1">//Disable the unused variable warning</span>
+<span class="co2">#pragma warning disable 0414</span>
+	<span class="co1">//Ensures that the MessengerHelper will be created automatically upon start of the game.</span>
+	<span class="kw1">static</span> <span class="kw1">private</span> MessengerHelper messengerHelper <span class="sy0">=</span> <span class="br0">&#40;</span> <span class="kw3">new</span> GameObject<span class="br0">&#40;</span><span class="st0">&quot;MessengerHelper&quot;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy0">.</span><span class="me1">AddComponent</span><span class="sy0">&lt;</span> MessengerHelper <span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co2">#pragma warning restore 0414</span>
+&#160;
+	<span class="kw1">static</span> <span class="kw1">public</span> Dictionary<span class="sy0">&lt;</span><span class="kw4">string</span>, <span class="kw4">Delegate</span><span class="sy0">&gt;</span> eventTable <span class="sy0">=</span> <span class="kw3">new</span> Dictionary<span class="sy0">&lt;</span><span class="kw4">string</span>, <span class="kw4">Delegate</span><span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&#160;
+	<span class="co1">//Message handlers that should never be removed, regardless of calling Cleanup</span>
+	<span class="kw1">static</span> <span class="kw1">public</span> List<span class="sy0">&lt;</span> <span class="kw4">string</span> <span class="sy0">&gt;</span> permanentMessages <span class="sy0">=</span> <span class="kw3">new</span> List<span class="sy0">&lt;</span> <span class="kw4">string</span> <span class="sy0">&gt;</span> <span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="co2">#endregion</span>
+	<span class="co2">#region Helper methods</span>
+	<span class="co1">//Marks a certain message as permanent.</span>
+	<span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> MarkAsPermanent<span class="br0">&#40;</span><span class="kw4">string</span> eventType<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="co2">#if LOG_ALL_MESSAGES</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;Messenger MarkAsPermanent <span class="es0">\t</span><span class="es0">\&quot;</span>&quot;</span> <span class="sy0">+</span> eventType <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\&quot;</span>&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co2">#endif</span>
+&#160;
+		permanentMessages<span class="sy0">.</span><span class="me1">Add</span><span class="br0">&#40;</span> eventType <span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="br0">&#125;</span>
+&#160;
+&#160;
+	<span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> Cleanup<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="br0">&#123;</span>
+<span class="co2">#if LOG_ALL_MESSAGES</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;MESSENGER Cleanup. Make sure that none of necessary listeners are removed.&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co2">#endif</span>
+&#160;
+		List<span class="sy0">&lt;</span> <span class="kw4">string</span> <span class="sy0">&gt;</span> messagesToRemove <span class="sy0">=</span> <span class="kw3">new</span> List<span class="sy0">&lt;</span><span class="kw4">string</span><span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&#160;
+		<span class="kw1">foreach</span> <span class="br0">&#40;</span>KeyValuePair<span class="sy0">&lt;</span><span class="kw4">string</span>, <span class="kw4">Delegate</span><span class="sy0">&gt;</span> pair <span class="kw1">in</span> eventTable<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+			<span class="kw4">bool</span> wasFound <span class="sy0">=</span> <span class="kw1">false</span><span class="sy0">;</span>
+&#160;
+			<span class="kw1">foreach</span> <span class="br0">&#40;</span><span class="kw4">string</span> message <span class="kw1">in</span> permanentMessages<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+				<span class="kw1">if</span> <span class="br0">&#40;</span>pair<span class="sy0">.</span><span class="me1">Key</span> <span class="sy0">==</span> message<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+					wasFound <span class="sy0">=</span> <span class="kw1">true</span><span class="sy0">;</span>
+					<span class="kw1">break</span><span class="sy0">;</span>
+				<span class="br0">&#125;</span>
+			<span class="br0">&#125;</span>
+&#160;
+			<span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>wasFound<span class="br0">&#41;</span>
+				messagesToRemove<span class="sy0">.</span><span class="me1">Add</span><span class="br0">&#40;</span> pair<span class="sy0">.</span><span class="me1">Key</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+		<span class="br0">&#125;</span>
+&#160;
+		<span class="kw1">foreach</span> <span class="br0">&#40;</span><span class="kw4">string</span> message <span class="kw1">in</span> messagesToRemove<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+			eventTable<span class="sy0">.</span><span class="me1">Remove</span><span class="br0">&#40;</span> message <span class="br0">&#41;</span><span class="sy0">;</span>
+		<span class="br0">&#125;</span>
+	<span class="br0">&#125;</span>
+&#160;
+	<span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> PrintEventTable<span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="br0">&#123;</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;<span class="es0">\t</span><span class="es0">\t</span><span class="es0">\t</span>=== MESSENGER PrintEventTable ===&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&#160;
+		<span class="kw1">foreach</span> <span class="br0">&#40;</span>KeyValuePair<span class="sy0">&lt;</span><span class="kw4">string</span>, <span class="kw4">Delegate</span><span class="sy0">&gt;</span> pair <span class="kw1">in</span> eventTable<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+			Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;<span class="es0">\t</span><span class="es0">\t</span><span class="es0">\t</span>&quot;</span> <span class="sy0">+</span> pair<span class="sy0">.</span><span class="me1">Key</span> <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\t</span><span class="es0">\t</span>&quot;</span> <span class="sy0">+</span> pair<span class="sy0">.</span><span class="me1">Value</span><span class="br0">&#41;</span><span class="sy0">;</span>
+		<span class="br0">&#125;</span>
+&#160;
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;<span class="es0">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="br0">&#125;</span>
+	<span class="co2">#endregion</span>
+&#160;
+	<span class="co2">#region Message logging and exception throwing</span>
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> OnListenerAdding<span class="br0">&#40;</span><span class="kw4">string</span> eventType, <span class="kw4">Delegate</span> listenerBeingAdded<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="co2">#if LOG_ALL_MESSAGES || LOG_ADD_LISTENER</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;MESSENGER OnListenerAdding <span class="es0">\t</span><span class="es0">\&quot;</span>&quot;</span> <span class="sy0">+</span> eventType <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\&quot;</span><span class="es0">\t</span>{&quot;</span> <span class="sy0">+</span> listenerBeingAdded<span class="sy0">.</span><span class="me1">Target</span> <span class="sy0">+</span> <span class="st0">&quot; -&gt; &quot;</span> <span class="sy0">+</span> listenerBeingAdded<span class="sy0">.</span><span class="me1">Method</span> <span class="sy0">+</span> <span class="st0">&quot;}&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co2">#endif</span>
+&#160;
+        <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>eventTable<span class="sy0">.</span><span class="me1">ContainsKey</span><span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            eventTable<span class="sy0">.</span><span class="me1">Add</span><span class="br0">&#40;</span>eventType, <span class="kw1">null</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="br0">&#125;</span>
+&#160;
+        <span class="kw4">Delegate</span> d <span class="sy0">=</span> eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span><span class="sy0">;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>d <span class="sy0">!=</span> <span class="kw1">null</span> <span class="sy0">&amp;&amp;</span> d<span class="sy0">.</span><span class="me1">GetType</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">!=</span> listenerBeingAdded<span class="sy0">.</span><span class="me1">GetType</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw1">throw</span> <span class="kw3">new</span> ListenerException<span class="br0">&#40;</span><span class="kw4">string</span><span class="sy0">.</span><span class="me1">Format</span><span class="br0">&#40;</span><span class="st0">&quot;Attempting to add listener with inconsistent signature for event type {0}. Current listeners have type {1} and listener being added has type {2}&quot;</span>, eventType, d<span class="sy0">.</span><span class="me1">GetType</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">.</span><span class="me1">Name</span>, listenerBeingAdded<span class="sy0">.</span><span class="me1">GetType</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">.</span><span class="me1">Name</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> OnListenerRemoving<span class="br0">&#40;</span><span class="kw4">string</span> eventType, <span class="kw4">Delegate</span> listenerBeingRemoved<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="co2">#if LOG_ALL_MESSAGES</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;MESSENGER OnListenerRemoving <span class="es0">\t</span><span class="es0">\&quot;</span>&quot;</span> <span class="sy0">+</span> eventType <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\&quot;</span><span class="es0">\t</span>{&quot;</span> <span class="sy0">+</span> listenerBeingRemoved<span class="sy0">.</span><span class="me1">Target</span> <span class="sy0">+</span> <span class="st0">&quot; -&gt; &quot;</span> <span class="sy0">+</span> listenerBeingRemoved<span class="sy0">.</span><span class="me1">Method</span> <span class="sy0">+</span> <span class="st0">&quot;}&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co2">#endif</span>
+&#160;
+        <span class="kw1">if</span> <span class="br0">&#40;</span>eventTable<span class="sy0">.</span><span class="me1">ContainsKey</span><span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw4">Delegate</span> d <span class="sy0">=</span> eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span><span class="sy0">;</span>
+&#160;
+            <span class="kw1">if</span> <span class="br0">&#40;</span>d <span class="sy0">==</span> <span class="kw1">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="kw1">throw</span> <span class="kw3">new</span> ListenerException<span class="br0">&#40;</span><span class="kw4">string</span><span class="sy0">.</span><span class="me1">Format</span><span class="br0">&#40;</span><span class="st0">&quot;Attempting to remove listener with for event type <span class="es0">\&quot;</span>{0}<span class="es0">\&quot;</span> but current listener is null.&quot;</span>, eventType<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">&#40;</span>d<span class="sy0">.</span><span class="me1">GetType</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">!=</span> listenerBeingRemoved<span class="sy0">.</span><span class="me1">GetType</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="kw1">throw</span> <span class="kw3">new</span> ListenerException<span class="br0">&#40;</span><span class="kw4">string</span><span class="sy0">.</span><span class="me1">Format</span><span class="br0">&#40;</span><span class="st0">&quot;Attempting to remove listener with inconsistent signature for event type {0}. Current listeners have type {1} and listener being removed has type {2}&quot;</span>, eventType, d<span class="sy0">.</span><span class="me1">GetType</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">.</span><span class="me1">Name</span>, listenerBeingRemoved<span class="sy0">.</span><span class="me1">GetType</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">.</span><span class="me1">Name</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+            <span class="kw1">throw</span> <span class="kw3">new</span> ListenerException<span class="br0">&#40;</span><span class="kw4">string</span><span class="sy0">.</span><span class="me1">Format</span><span class="br0">&#40;</span><span class="st0">&quot;Attempting to remove listener for type <span class="es0">\&quot;</span>{0}<span class="es0">\&quot;</span> but Messenger doesn't know about this event type.&quot;</span>, eventType<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> OnListenerRemoved<span class="br0">&#40;</span><span class="kw4">string</span> eventType<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">==</span> <span class="kw1">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            eventTable<span class="sy0">.</span><span class="me1">Remove</span><span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> OnBroadcasting<span class="br0">&#40;</span><span class="kw4">string</span> eventType<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="co2">#if REQUIRE_LISTENER</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span>eventTable<span class="sy0">.</span><span class="me1">ContainsKey</span><span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw1">throw</span> <span class="kw3">new</span> BroadcastException<span class="br0">&#40;</span><span class="kw4">string</span><span class="sy0">.</span><span class="me1">Format</span><span class="br0">&#40;</span><span class="st0">&quot;Broadcasting message <span class="es0">\&quot;</span>{0}<span class="es0">\&quot;</span> but no listener found. Try marking the message with Messenger.MarkAsPermanent.&quot;</span>, eventType<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+        <span class="br0">&#125;</span>
+<span class="co2">#endif</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="kw1">static</span> <span class="kw1">public</span> BroadcastException CreateBroadcastSignatureException<span class="br0">&#40;</span><span class="kw4">string</span> eventType<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="kw3">new</span> BroadcastException<span class="br0">&#40;</span><span class="kw4">string</span><span class="sy0">.</span><span class="me1">Format</span><span class="br0">&#40;</span><span class="st0">&quot;Broadcasting message <span class="es0">\&quot;</span>{0}<span class="es0">\&quot;</span> but listeners have a different signature than the broadcaster.&quot;</span>, eventType<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="kw1">public</span> <span class="kw4">class</span> BroadcastException <span class="sy0">:</span> Exception <span class="br0">&#123;</span>
+        <span class="kw1">public</span> BroadcastException<span class="br0">&#40;</span><span class="kw4">string</span> msg<span class="br0">&#41;</span>
+            <span class="sy0">:</span> <span class="kw1">base</span><span class="br0">&#40;</span>msg<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+    <span class="kw1">public</span> <span class="kw4">class</span> ListenerException <span class="sy0">:</span> Exception <span class="br0">&#123;</span>
+        <span class="kw1">public</span> ListenerException<span class="br0">&#40;</span><span class="kw4">string</span> msg<span class="br0">&#41;</span>
+            <span class="sy0">:</span> <span class="kw1">base</span><span class="br0">&#40;</span>msg<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+	<span class="co2">#endregion</span>
+&#160;
+	<span class="co2">#region AddListener</span>
+	<span class="co1">//No parameters</span>
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> AddListener<span class="br0">&#40;</span><span class="kw4">string</span> eventType, Callback handler<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        OnListenerAdding<span class="br0">&#40;</span>eventType, handler<span class="br0">&#41;</span><span class="sy0">;</span>
+        eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#40;</span>Callback<span class="br0">&#41;</span>eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">+</span> handler<span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Single parameter</span>
+	<span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> AddListener<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="kw4">string</span> eventType, Callback<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span> handler<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        OnListenerAdding<span class="br0">&#40;</span>eventType, handler<span class="br0">&#41;</span><span class="sy0">;</span>
+        eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#40;</span>Callback<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span><span class="br0">&#41;</span>eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">+</span> handler<span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Two parameters</span>
+	<span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> AddListener<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="kw4">string</span> eventType, Callback<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;</span> handler<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        OnListenerAdding<span class="br0">&#40;</span>eventType, handler<span class="br0">&#41;</span><span class="sy0">;</span>
+        eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#40;</span>Callback<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;</span><span class="br0">&#41;</span>eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">+</span> handler<span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Three parameters</span>
+	<span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> AddListener<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="kw4">string</span> eventType, Callback<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;</span> handler<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        OnListenerAdding<span class="br0">&#40;</span>eventType, handler<span class="br0">&#41;</span><span class="sy0">;</span>
+        eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#40;</span>Callback<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;</span><span class="br0">&#41;</span>eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">+</span> handler<span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+	<span class="co2">#endregion</span>
+&#160;
+	<span class="co2">#region RemoveListener</span>
+	<span class="co1">//No parameters</span>
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> RemoveListener<span class="br0">&#40;</span><span class="kw4">string</span> eventType, Callback handler<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        OnListenerRemoving<span class="br0">&#40;</span>eventType, handler<span class="br0">&#41;</span><span class="sy0">;</span>   
+        eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#40;</span>Callback<span class="br0">&#41;</span>eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">-</span> handler<span class="sy0">;</span>
+        OnListenerRemoved<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Single parameter</span>
+	<span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> RemoveListener<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="kw4">string</span> eventType, Callback<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span> handler<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        OnListenerRemoving<span class="br0">&#40;</span>eventType, handler<span class="br0">&#41;</span><span class="sy0">;</span>
+        eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#40;</span>Callback<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span><span class="br0">&#41;</span>eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">-</span> handler<span class="sy0">;</span>
+        OnListenerRemoved<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Two parameters</span>
+	<span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> RemoveListener<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="kw4">string</span> eventType, Callback<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;</span> handler<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        OnListenerRemoving<span class="br0">&#40;</span>eventType, handler<span class="br0">&#41;</span><span class="sy0">;</span>
+        eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#40;</span>Callback<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;</span><span class="br0">&#41;</span>eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">-</span> handler<span class="sy0">;</span>
+        OnListenerRemoved<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Three parameters</span>
+	<span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> RemoveListener<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="kw4">string</span> eventType, Callback<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;</span> handler<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        OnListenerRemoving<span class="br0">&#40;</span>eventType, handler<span class="br0">&#41;</span><span class="sy0">;</span>
+        eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#40;</span>Callback<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;</span><span class="br0">&#41;</span>eventTable<span class="br0">&#91;</span>eventType<span class="br0">&#93;</span> <span class="sy0">-</span> handler<span class="sy0">;</span>
+        OnListenerRemoved<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="br0">&#125;</span>
+	<span class="co2">#endregion</span>
+&#160;
+	<span class="co2">#region Broadcast</span>
+	<span class="co1">//No parameters</span>
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> Broadcast<span class="br0">&#40;</span><span class="kw4">string</span> eventType<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="co2">#if LOG_ALL_MESSAGES || LOG_BROADCAST_MESSAGE</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;MESSENGER<span class="es0">\t</span>&quot;</span> <span class="sy0">+</span> <span class="kw5">System</span><span class="sy0">.</span><span class="me1">DateTime</span><span class="sy0">.</span><span class="me1">Now</span><span class="sy0">.</span><span class="me1">ToString</span><span class="br0">&#40;</span><span class="st0">&quot;hh:mm:ss.fff&quot;</span><span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\t</span><span class="es0">\t</span><span class="es0">\t</span>Invoking <span class="es0">\t</span><span class="es0">\&quot;</span>&quot;</span> <span class="sy0">+</span> eventType <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\&quot;</span>&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co2">#endif</span>
+        OnBroadcasting<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+&#160;
+        <span class="kw4">Delegate</span> d<span class="sy0">;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>eventTable<span class="sy0">.</span><span class="me1">TryGetValue</span><span class="br0">&#40;</span>eventType, <span class="kw1">out</span> d<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            Callback callback <span class="sy0">=</span> d <span class="kw1">as</span> Callback<span class="sy0">;</span>
+&#160;
+            <span class="kw1">if</span> <span class="br0">&#40;</span>callback <span class="sy0">!=</span> <span class="kw1">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                callback<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+                <span class="kw1">throw</span> CreateBroadcastSignatureException<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Single parameter</span>
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> Broadcast<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="kw4">string</span> eventType, T arg1<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="co2">#if LOG_ALL_MESSAGES || LOG_BROADCAST_MESSAGE</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;MESSENGER<span class="es0">\t</span>&quot;</span> <span class="sy0">+</span> <span class="kw5">System</span><span class="sy0">.</span><span class="me1">DateTime</span><span class="sy0">.</span><span class="me1">Now</span><span class="sy0">.</span><span class="me1">ToString</span><span class="br0">&#40;</span><span class="st0">&quot;hh:mm:ss.fff&quot;</span><span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\t</span><span class="es0">\t</span><span class="es0">\t</span>Invoking <span class="es0">\t</span><span class="es0">\&quot;</span>&quot;</span> <span class="sy0">+</span> eventType <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\&quot;</span>&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co2">#endif</span>
+        OnBroadcasting<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+&#160;
+        <span class="kw4">Delegate</span> d<span class="sy0">;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>eventTable<span class="sy0">.</span><span class="me1">TryGetValue</span><span class="br0">&#40;</span>eventType, <span class="kw1">out</span> d<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            Callback<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span> callback <span class="sy0">=</span> d <span class="kw1">as</span> Callback<span class="sy0">&lt;</span>T<span class="sy0">&gt;;</span>
+&#160;
+            <span class="kw1">if</span> <span class="br0">&#40;</span>callback <span class="sy0">!=</span> <span class="kw1">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                callback<span class="br0">&#40;</span>arg1<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+                <span class="kw1">throw</span> CreateBroadcastSignatureException<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+	<span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Two parameters</span>
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> Broadcast<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="kw4">string</span> eventType, T arg1, U arg2<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="co2">#if LOG_ALL_MESSAGES || LOG_BROADCAST_MESSAGE</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;MESSENGER<span class="es0">\t</span>&quot;</span> <span class="sy0">+</span> <span class="kw5">System</span><span class="sy0">.</span><span class="me1">DateTime</span><span class="sy0">.</span><span class="me1">Now</span><span class="sy0">.</span><span class="me1">ToString</span><span class="br0">&#40;</span><span class="st0">&quot;hh:mm:ss.fff&quot;</span><span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\t</span><span class="es0">\t</span><span class="es0">\t</span>Invoking <span class="es0">\t</span><span class="es0">\&quot;</span>&quot;</span> <span class="sy0">+</span> eventType <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\&quot;</span>&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co2">#endif</span>
+        OnBroadcasting<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+&#160;
+        <span class="kw4">Delegate</span> d<span class="sy0">;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>eventTable<span class="sy0">.</span><span class="me1">TryGetValue</span><span class="br0">&#40;</span>eventType, <span class="kw1">out</span> d<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            Callback<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;</span> callback <span class="sy0">=</span> d <span class="kw1">as</span> Callback<span class="sy0">&lt;</span>T, U<span class="sy0">&gt;;</span>
+&#160;
+            <span class="kw1">if</span> <span class="br0">&#40;</span>callback <span class="sy0">!=</span> <span class="kw1">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                callback<span class="br0">&#40;</span>arg1, arg2<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+                <span class="kw1">throw</span> CreateBroadcastSignatureException<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Three parameters</span>
+    <span class="kw1">static</span> <span class="kw1">public</span> <span class="kw4">void</span> Broadcast<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="kw4">string</span> eventType, T arg1, U arg2, V arg3<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="co2">#if LOG_ALL_MESSAGES || LOG_BROADCAST_MESSAGE</span>
+		Debug<span class="sy0">.</span><span class="me1">Log</span><span class="br0">&#40;</span><span class="st0">&quot;MESSENGER<span class="es0">\t</span>&quot;</span> <span class="sy0">+</span> <span class="kw5">System</span><span class="sy0">.</span><span class="me1">DateTime</span><span class="sy0">.</span><span class="me1">Now</span><span class="sy0">.</span><span class="me1">ToString</span><span class="br0">&#40;</span><span class="st0">&quot;hh:mm:ss.fff&quot;</span><span class="br0">&#41;</span> <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\t</span><span class="es0">\t</span><span class="es0">\t</span>Invoking <span class="es0">\t</span><span class="es0">\&quot;</span>&quot;</span> <span class="sy0">+</span> eventType <span class="sy0">+</span> <span class="st0">&quot;<span class="es0">\&quot;</span>&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co2">#endif</span>
+        OnBroadcasting<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+&#160;
+        <span class="kw4">Delegate</span> d<span class="sy0">;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>eventTable<span class="sy0">.</span><span class="me1">TryGetValue</span><span class="br0">&#40;</span>eventType, <span class="kw1">out</span> d<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            Callback<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;</span> callback <span class="sy0">=</span> d <span class="kw1">as</span> Callback<span class="sy0">&lt;</span>T, U, V<span class="sy0">&gt;;</span>
+&#160;
+            <span class="kw1">if</span> <span class="br0">&#40;</span>callback <span class="sy0">!=</span> <span class="kw1">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                callback<span class="br0">&#40;</span>arg1, arg2, arg3<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+                <span class="kw1">throw</span> CreateBroadcastSignatureException<span class="br0">&#40;</span>eventType<span class="br0">&#41;</span><span class="sy0">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+	<span class="co2">#endregion</span>
+<span class="br0">&#125;</span>
+&#160;
+<span class="co1">//This manager will ensure that the messenger's eventTable will be cleaned up upon loading of a new level.</span>
+<span class="kw1">public</span> <span class="kw1">sealed</span> <span class="kw4">class</span> MessengerHelper <span class="sy0">:</span> MonoBehaviour <span class="br0">&#123;</span>
+	<span class="kw4">void</span> Awake <span class="br0">&#40;</span><span class="br0">&#41;</span>
+	<span class="br0">&#123;</span>
+		DontDestroyOnLoad<span class="br0">&#40;</span>gameObject<span class="br0">&#41;</span><span class="sy0">;</span>	
+	<span class="br0">&#125;</span>
+&#160;
+	<span class="co1">//Clean up eventTable every time a new level loads.</span>
+	<span class="kw1">public</span> <span class="kw4">void</span> OnDisable<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+		Messenger<span class="sy0">.</span><span class="me1">Cleanup</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p><br />
+</p><p><br />
+=== Questions (apologies for putting this on the page directly, there doesn't seem to be a discussion tab)
+</p><p>I'm using CSharp Messenger Extended and am wondering if I ought to switch to this. If I don't want my event listeners cleared automatically when the scene loads (many listeners are on DontDestroyOnLoad objects) then is there any advantage to using Advanced instead of Extended? Currently I just always put listener registration in Awake() and OnDestroy() methods and that seems to work correctly.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 124/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mediawiki:pcache:idhash:3868-0!*!0!!en!*!* and timestamp 20140518055310 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://wiki.unity3d.com/index.php?title=Advanced_CSharp_Messenger&amp;oldid=17881">http://wiki.unity3d.com/index.php?title=Advanced_CSharp_Messenger&amp;oldid=17881</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/index.php/Category:Design_Patterns" title="Category:Design Patterns">Design Patterns</a></li><li><a href="/index.php?title=Category:Messaging&amp;action=edit&amp;redlink=1" class="new" title="Category:Messaging (page does not exist)">Messaging</a></li><li><a href="/index.php/Category:C_Sharp" title="Category:C Sharp">C Sharp</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Advanced+CSharp+Messenger" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in / create account</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/index.php/Advanced_CSharp_Messenger"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="/index.php?title=Talk:Advanced_CSharp_Messenger&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+	<h4>
+		</h4>
+	<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/index.php/Advanced_CSharp_Messenger" >Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="/index.php?title=Advanced_CSharp_Messenger&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Advanced_CSharp_Messenger&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/index.php" id="searchform">
+				<div>
+			<input type="search" name="search" title="Search Unify Community Wiki [f]" accesskey="f" id="searchInput" />			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />					<input type='hidden' name="title" value="Special:Search"/>
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(/images/wiki.png);" href="/index.php/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- Navigation -->
+<div class="portal" id='p-Navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage"><a href="/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li>
+			<li id="n-Extensions"><a href="/index.php/Extensions">Extensions</a></li>
+			<li id="n-Particle-Library"><a href="/index.php/Particle_Library">Particle Library</a></li>
+			<li id="n-Programming"><a href="/index.php/Programming">Programming</a></li>
+			<li id="n-Scripts"><a href="/index.php/Scripts">Scripts</a></li>
+			<li id="n-Shaders"><a href="/index.php/Shaders">Shaders</a></li>
+			<li id="n-Wizards"><a href="/index.php/Wizards">Wizards</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Navigation -->
+
+<!-- Extras -->
+<div class="portal" id='p-Extras'>
+	<h5>Extras</h5>
+	<div class="body">
+		<ul>
+			<li id="n-Tips.2C-Tricks.2C-Tools"><a href="/index.php/Tips">Tips, Tricks, Tools</a></li>
+			<li id="n-Tutorials"><a href="/index.php/Tutorials">Tutorials</a></li>
+			<li id="n-Unity-Projects"><a href="/index.php/Unity_Projects">Unity Projects</a></li>
+			<li id="n-Contests"><a href="/index.php/Contests">Contests</a></li>
+			<li id="n-IRC-Chatroom"><a href="/index.php/IRC">IRC Chatroom</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Extras -->
+
+<!-- Quick Links -->
+<div class="portal" id='p-Quick_Links'>
+	<h5>Quick Links</h5>
+	<div class="body">
+		<ul>
+			<li id="n-portal"><a href="/index.php/Unify:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-New-Pages"><a href="/index.php/Special:NewPages">New Pages</a></li>
+			<li id="n-help"><a href="/index.php/Help:Contents" title="The place to find out">Help</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Quick Links -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal" id='p-tb'>
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/index.php/Special:WhatLinksHere/Advanced_CSharp_Messenger" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/index.php/Special:RecentChangesLinked/Advanced_CSharp_Messenger" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li><a href="/index.php?title=Advanced_CSharp_Messenger&amp;printable=yes" rel="alternate">Printable version</a></li>
+			<li id="t-permalink"><a href="/index.php?title=Advanced_CSharp_Messenger&amp;oldid=17881" title="Permanent link to this revision of the page">Permanent link</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 24 March 2014, at 18:00.</li>
+											<li id="footer-info-viewcount">This page has been accessed 20,918 times.</li>
+											<li id="footer-info-copyright">Content is available under <a class="external" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share Alike</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/index.php/Unify:Privacy_policy" title="Unify:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/index.php/Unify:About" title="Unify:About">About Unify Community Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/index.php/Unify:General_disclaimer" title="Unify:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/skins/common/images/cc-by-sa.png" alt="Creative Commons Attribution Share Alike" width="88" height="31" /></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script src="http://wiki.unity3d.com/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready"], null, true);
+}</script>
+<script src="http://wiki.unity3d.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<!-- Served in 0.190 secs. -->
+	</body>
+</html>

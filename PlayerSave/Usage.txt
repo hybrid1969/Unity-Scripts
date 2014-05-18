@@ -1,0 +1,15 @@
+Usage
+
+Just put the code in your project, and then use the class just like you would PlayerPrefs, it's functions are the same:
+
+PlayerSave.GetInt("a integer key", 99); //returns 99
+PlayerSave.SetInt("a integer key", 1234);
+PlayerSave.GetInt("a integer  key", 99); //returns 1234
+ 
+PlayerSave.GetFloat("a float key", 99.99f); //returns 99.99
+PlayerSave.SetFloat("a float key", 1234.56f);
+PlayerSave.GetFloat("a float key", 99.99f); //returns 1234.56
+ 
+PlayerSave.GetString("a string key", "Ninety-nine"); //returns Ninety-nine
+PlayerSave.SetString("a string key", "One, Two, Three");
+PlayerSave.GetString("a string key", "Ninety-nine"); //returns One, Two, Three
